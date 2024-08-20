@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\Priyanka\eclipse-workspace\MasterSeleniumFramework\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.selenium.NavigationTest" class="method navigator-link" hash-for-method="NavigateFromHomeToStoreMenu">NavigateFromHomeToStoreMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.selenium.SearchTest" class="method navigator-link" hash-for-method="SearchTestwithPartialMatch">SearchTestwithPartialMatch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.selenium.AddToCartTest" class="method navigator-link" hash-for-method="addToCartFeaturedProducts(org.selenium.objects.Products@6067c00d)">addToCartFeaturedProducts(org.selenium.objects.Products@6067c00d)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.selenium.AddToCartTest" class="method navigator-link" hash-for-method="addToCartFeaturedProducts(org.selenium.objects.Products@4763e30c)">addToCartFeaturedProducts(org.selenium.objects.Products@4763e30c)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.selenium.AddToCartTest" class="method navigator-link" hash-for-method="addToCartFeaturedProducts(org.selenium.objects.Products@6a06f2b7)">addToCartFeaturedProducts(org.selenium.objects.Products@6a06f2b7)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.selenium.AddToCartTest" class="method navigator-link" hash-for-method="addToCartFeaturedProducts(org.selenium.objects.Products@21475a50)">addToCartFeaturedProducts(org.selenium.objects.Products@21475a50)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.selenium.AddToCartTest" class="method navigator-link" hash-for-method="addToCartFeaturedProducts(org.selenium.objects.Products@19eb6138)">addToCartFeaturedProducts(org.selenium.objects.Products@19eb6138)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.selenium.AddToCartTest" class="method navigator-link" hash-for-method="addToCartFromStorePage">addToCartFromStorePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.selenium.MyFirstTestCase" class="method navigator-link" hash-for-method="guestCheckOutUsingDirectBankTransfer">guestCheckOutUsingDirectBankTransfer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.selenium.MyFirstTestCase" class="method navigator-link" hash-for-method="loginAndCheckOutUsingDirectBankTransfer">loginAndCheckOutUsingDirectBankTransfer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.selenium.CheckOutTest" class="method navigator-link" hash-for-method="loginAndCheckOutUsingDirectBankTransfer_temporary">loginAndCheckOutUsingDirectBankTransfer_temporary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.selenium.LoginTest" class="method navigator-link" hash-for-method="loginDuringCheckOut">loginDuringCheckOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.selenium.NavigationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="NavigateFromHomeToStoreMenu">
+                  </a> <!-- NavigateFromHomeToStoreMenu -->
+                  <span class="method-name">NavigateFromHomeToStoreMenu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.selenium.CheckOutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAndCheckOutUsingDirectBankTransfer_temporary">
+                  </a> <!-- loginAndCheckOutUsingDirectBankTransfer_temporary -->
+                  <span class="method-name">loginAndCheckOutUsingDirectBankTransfer_temporary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.selenium.AddToCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToCartFeaturedProducts(org.selenium.objects.Products@6067c00d)">
+                  </a> <!-- addToCartFeaturedProducts(org.selenium.objects.Products@6067c00d) -->
+                  <span class="method-name">addToCartFeaturedProducts</span>
+                  <span class="parameters">(org.selenium.objects.Products@6067c00d)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToCartFeaturedProducts(org.selenium.objects.Products@4763e30c)">
+                  </a> <!-- addToCartFeaturedProducts(org.selenium.objects.Products@4763e30c) -->
+                  <span class="method-name">addToCartFeaturedProducts</span>
+                  <span class="parameters">(org.selenium.objects.Products@4763e30c)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToCartFeaturedProducts(org.selenium.objects.Products@6a06f2b7)">
+                  </a> <!-- addToCartFeaturedProducts(org.selenium.objects.Products@6a06f2b7) -->
+                  <span class="method-name">addToCartFeaturedProducts</span>
+                  <span class="parameters">(org.selenium.objects.Products@6a06f2b7)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToCartFeaturedProducts(org.selenium.objects.Products@21475a50)">
+                  </a> <!-- addToCartFeaturedProducts(org.selenium.objects.Products@21475a50) -->
+                  <span class="method-name">addToCartFeaturedProducts</span>
+                  <span class="parameters">(org.selenium.objects.Products@21475a50)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToCartFeaturedProducts(org.selenium.objects.Products@19eb6138)">
+                  </a> <!-- addToCartFeaturedProducts(org.selenium.objects.Products@19eb6138) -->
+                  <span class="method-name">addToCartFeaturedProducts</span>
+                  <span class="parameters">(org.selenium.objects.Products@19eb6138)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToCartFromStorePage">
+                  </a> <!-- addToCartFromStorePage -->
+                  <span class="method-name">addToCartFromStorePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.selenium.SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchTestwithPartialMatch">
+                  </a> <!-- SearchTestwithPartialMatch -->
+                  <span class="method-name">SearchTestwithPartialMatch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.selenium.MyFirstTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="guestCheckOutUsingDirectBankTransfer">
+                  </a> <!-- guestCheckOutUsingDirectBankTransfer -->
+                  <span class="method-name">guestCheckOutUsingDirectBankTransfer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAndCheckOutUsingDirectBankTransfer">
+                  </a> <!-- loginAndCheckOutUsingDirectBankTransfer -->
+                  <span class="method-name">loginAndCheckOutUsingDirectBankTransfer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.selenium.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginDuringCheckOut">
+                  </a> <!-- loginDuringCheckOut -->
+                  <span class="method-name">loginDuringCheckOut</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Priyanka\eclipse-workspace\MasterSeleniumFramework\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;chrome&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;CHROME&quot;/&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;org.selenium&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.selenium.AddToCartTest&quot;/&gt;
+      &lt;class name=&quot;org.selenium.CheckOutTest&quot;/&gt;
+      &lt;class name=&quot;org.selenium.LoginTest&quot;/&gt;
+      &lt;class name=&quot;org.selenium.MyFirstTestCase&quot;/&gt;
+      &lt;class name=&quot;org.selenium.NavigationTest&quot;/&gt;
+      &lt;class name=&quot;org.selenium.SearchTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- chrome --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">chrome (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginAndCheckOutUsingDirectBankTransfer_temporary')
+data.setCell(0, 2, 'org.selenium.CheckOutTest')
+data.setCell(0, 3, 60411);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginDuringCheckOut')
+data.setCell(1, 2, 'org.selenium.LoginTest')
+data.setCell(1, 3, 46019);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'guestCheckOutUsingDirectBankTransfer')
+data.setCell(2, 2, 'org.selenium.MyFirstTestCase')
+data.setCell(2, 3, 32468);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginAndCheckOutUsingDirectBankTransfer')
+data.setCell(3, 2, 'org.selenium.MyFirstTestCase')
+data.setCell(3, 3, 19635);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addToCartFeaturedProducts')
+data.setCell(4, 2, 'org.selenium.AddToCartTest')
+data.setCell(4, 3, 11076);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addToCartFeaturedProducts')
+data.setCell(5, 2, 'org.selenium.AddToCartTest')
+data.setCell(5, 3, 10289);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'addToCartFromStorePage')
+data.setCell(6, 2, 'org.selenium.AddToCartTest')
+data.setCell(6, 3, 9864);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'addToCartFeaturedProducts')
+data.setCell(7, 2, 'org.selenium.AddToCartTest')
+data.setCell(7, 3, 9751);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'addToCartFeaturedProducts')
+data.setCell(8, 2, 'org.selenium.AddToCartTest')
+data.setCell(8, 3, 8437);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'addToCartFeaturedProducts')
+data.setCell(9, 2, 'org.selenium.AddToCartTest')
+data.setCell(9, 3, 5947);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'SearchTestwithPartialMatch')
+data.setCell(10, 2, 'org.selenium.SearchTest')
+data.setCell(10, 3, 2962);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'NavigateFromHomeToStoreMenu')
+data.setCell(11, 2, 'org.selenium.NavigationTest')
+data.setCell(11, 3, 2183);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">org.selenium.CheckOutTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">loginAndCheckOutUsingDirectBankTransfer</span>
+                <br/>
+                <span class="ignored-method-name">GuestCheckoutUsingDirectBankTransfer</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.selenium.AddToCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startDriver(CHROME)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.selenium.CheckOutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startDriver(CHROME)</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.selenium.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startDriver(CHROME)</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.selenium.MyFirstTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startDriver(CHROME)</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.selenium.AddToCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startDriver(CHROME)</span>
+                <span class="method-start">1459 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startDriver(CHROME)</span>
+                <span class="method-start">1459 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startDriver(CHROME)</span>
+                <span class="method-start">1460 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startDriver(CHROME)</span>
+                <span class="method-start">1460 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startDriver(CHROME)</span>
+                <span class="method-start">1465 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.selenium.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginDuringCheckOut</span>
+                <span class="method-start">9000 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.selenium.MyFirstTestCase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">guestCheckOutUsingDirectBankTransfer</span>
+                <span class="method-start">9268 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.selenium.CheckOutTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginAndCheckOutUsingDirectBankTransfer_temporary</span>
+                <span class="method-start">9278 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.selenium.AddToCartTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addToCartFromStorePage</span>
+                <span class="method-start">9279 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver(null, [TestResult name=addToCartFromStorePage status=SUCCESS method=AddToCartTest.addToCartFromStore...)</span>
+                <span class="method-start">19172 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">addToCartFeaturedProducts(org.selenium.objects.Products@19eb6138)</span>
+                <span class="method-start">19665 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addToCartFeaturedProducts(org.selenium.objects.Products@6a06f2b7)</span>
+                <span class="method-start">23929 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver(null, [TestResult name=addToCartFeaturedProducts status=SUCCESS method=AddToCartTest.addToCartFeatur...)</span>
+                <span class="method-start">28108 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">addToCartFeaturedProducts(org.selenium.objects.Products@6067c00d)</span>
+                <span class="method-start">30263 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver(null, [TestResult name=addToCartFeaturedProducts status=SUCCESS method=AddToCartTest.addToCartFeatur...)</span>
+                <span class="method-start">33683 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">addToCartFeaturedProducts(org.selenium.objects.Products@4763e30c)</span>
+                <span class="method-start">35258 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addToCartFeaturedProducts(org.selenium.objects.Products@21475a50)</span>
+                <span class="method-start">40434 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver(null, [TestResult name=addToCartFeaturedProducts status=SUCCESS method=AddToCartTest.addToCartFeatur...)</span>
+                <span class="method-start">40553 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.selenium.MyFirstTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver(null, [TestResult name=guestCheckOutUsingDirectBankTransfer status=SUCCESS method=MyFirstTestCase.gu...)</span>
+                <span class="method-start">41741 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startDriver(CHROME)</span>
+                <span class="method-start">45159 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.selenium.AddToCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver(null, [TestResult name=addToCartFeaturedProducts status=SUCCESS method=AddToCartTest.addToCartFeatur...)</span>
+                <span class="method-start">46339 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver(null, [TestResult name=addToCartFeaturedProducts status=SUCCESS method=AddToCartTest.addToCartFeatur...)</span>
+                <span class="method-start">46384 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.selenium.MyFirstTestCase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginAndCheckOutUsingDirectBankTransfer</span>
+                <span class="method-start">48358 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.selenium.NavigationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startDriver(CHROME)</span>
+                <span class="method-start">50674 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">NavigateFromHomeToStoreMenu</span>
+                <span class="method-start">51793 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver(null, [TestResult name=NavigateFromHomeToStoreMenu status=SUCCESS method=NavigationTest.NavigateFrom...)</span>
+                <span class="method-start">53979 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.selenium.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver(null, [TestResult name=loginDuringCheckOut status=SUCCESS method=LoginTest.loginDuringCheckOut()[pri...)</span>
+                <span class="method-start">55023 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.selenium.SearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startDriver(CHROME)</span>
+                <span class="method-start">55355 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SearchTestwithPartialMatch</span>
+                <span class="method-start">56264 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver(null, [TestResult name=SearchTestwithPartialMatch status=SUCCESS method=SearchTest.SearchTestwithPar...)</span>
+                <span class="method-start">59232 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.selenium.MyFirstTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver(null, [TestResult name=loginAndCheckOutUsingDirectBankTransfer status=SUCCESS method=MyFirstTestCase...)</span>
+                <span class="method-start">67996 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.selenium.CheckOutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver(null, [TestResult name=loginAndCheckOutUsingDirectBankTransfer_temporary status=SUCCESS method=Check...)</span>
+                <span class="method-start">69691 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
